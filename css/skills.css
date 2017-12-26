@@ -1,0 +1,91 @@
+
+body {
+  font-family: Helvetica;
+  padding: 0;
+  background-image: url("../img/skills.jpg");
+  background-size: cover;
+}
+
+#myNav {
+  margin:0;
+  padding:0;
+}
+
+.proficientin {
+  color: whitesmoke;
+  margin: 2% 0 0 6%;
+}
+
+.skillset {
+  display: inline-flex;
+  /*justify-content: space-between; */
+  flex-wrap: wrap;
+  padding: 0 5% 5% 5%;
+}
+
+h1 {
+  font-size: 150%;
+  white-space: pre-line;
+}
+
+.skill-java {
+  background-color: rgb(38, 229, 54);
+}
+
+.skill-c {
+  background-color: rgb(38, 229, 229);
+}
+
+.skill-html {
+  background-color: #E55126;
+}
+
+.skill-js {
+  background-color: #E5A227;
+}
+
+.skill-jquery {
+  background-color: #0C73B8;
+}
+
+.skill-fun {
+  background-color: crimson;
+}
+
+
+.skill-fun,
+.skill-java,
+.skill-c,
+.skill-html,
+.skill-js,
+.skill-jquery {
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(34, 33, 33);
+  color: whitesmoke;
+  margin: 1%;
+  padding: 5%;
+  width: 40%;
+}
+
+.projects-button {
+  padding: 5%;
+  background-color: whitesmoke;
+  opacity: 0.9;
+  width: 100%;
+  color: black;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects {
+  margin: 1em 0;
+}
+
+.active {
+  background-color: #333333;
+  color: whitesmoke;
+}
