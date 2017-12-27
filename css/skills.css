@@ -12,7 +12,7 @@ body {
 }
 
 .proficientin {
-  color: whitesmoke;
+  color: rgb(255, 249, 249);
   margin: 2% 0 0 6%;
 }
 
@@ -29,27 +29,27 @@ h1 {
 }
 
 .skill-java {
-  background-color: rgb(38, 229, 54);
+  background-color: rgba(38, 229, 54, 0.470);
 }
 
 .skill-c {
-  background-color: rgb(38, 229, 229);
+  background-color: rgba(38, 229, 229, 0.470);
 }
 
 .skill-html {
-  background-color: #E55126;
+  background-color: rgba(229, 83, 38, 0.470);
 }
 
 .skill-js {
-  background-color: #E5A227;
+  background-color: rgba(229, 162, 39, 0.470);
 }
 
 .skill-jquery {
-  background-color: #0C73B8;
+  background-color: rgba(12, 115, 184, 0.470);
 }
 
 .skill-fun {
-  background-color: crimson;
+  background-color: rgba(220, 20, 60, 0.432);
 }
 
 
