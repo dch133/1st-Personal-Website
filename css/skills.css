@@ -1,15 +1,10 @@
 
 body {
   font-family: Helvetica;
-  padding: 0;
   background-image: url("../img/skills.jpg");
   background-size: cover;
 }
 
-#myNav {
-  margin:0;
-  padding:0;
-}
 
 .proficientin {
   color: rgb(255, 249, 249);
@@ -60,7 +55,7 @@ h1 {
 .skill-js,
 .skill-jquery {
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgb(34, 33, 33);
+  box-shadow: 0px 0px 30px rgb(0, 0, 0);
   color: whitesmoke;
   margin: 1%;
   padding: 5%;
@@ -88,4 +83,8 @@ ul {
 .active {
   background-color: #333333;
   color: whitesmoke;
+}
+
+footer {
+  position: absolute;
 }
