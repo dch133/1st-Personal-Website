@@ -2,13 +2,17 @@ body {
     background-color: #ccc;
     background-image: url("../img/bg.jpg");
     background-size: cover;
-    height: 100%;
+    height: 60vh;
+}
+header {
+    height: 20vh;
 }
 
 .intro {
+    display: block;
     color: whitesmoke;
     text-align: center;
-    font-size: 200%;
+    font-size: 300%;
     padding: 15%;
 }
 
@@ -18,14 +22,17 @@ body {
     display: block;
     margin: 5% 10% 20% 10%;
     text-align: center;
+    background-repeat: no-repeat;
 }
 
 footer {
     background: #212529;
     position: absolute;
+    bottom: 0;
     clear: both;
     color: white;
     padding: 2% 0 0 2%;
     text-align: center;
     width: 100%;
+    height: 20vh;
 }
