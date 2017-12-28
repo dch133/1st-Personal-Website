@@ -5,18 +5,18 @@ body {
   background-size: cover;
 }
 
-
-.proficientin {
-  color: rgb(255, 249, 249);
-  margin: 2% 44% 0 0;
-  font-size: 250%;
-}
-
 .skillset {
   display: inline-flex;
   flex-wrap: wrap;
   padding: 0 5% 5% 5%;
   justify-content: center 
+}
+
+.proficientin {
+  color: rgb(255, 249, 249);
+  margin: 2%;
+  font-size: 250%;
+  width: 100%
 }
 
 h1 {
@@ -46,7 +46,6 @@ h1 {
 .skill-fun {
   background-color: rgba(220, 20, 60, 0.432);
 }
-
 
 .skill-fun,
 .skill-java,
