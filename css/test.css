@@ -14,6 +14,7 @@
 button {
     background-color: rgba(194, 71, 71, 0.795);
     border: rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 .pics ul {

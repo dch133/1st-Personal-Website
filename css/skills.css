@@ -1,8 +1,8 @@
 
 body {
   font-family: Helvetica;
-  background-image: url("../img/skills.jpg");
-  background-size: cover;
+  /*background-image: url("../img/skills.jpg");
+  background-size: cover;*/
 }
 
 .skillset {
@@ -62,12 +62,13 @@ h1 {
 }
 
 .projects-button {
-  padding: 5%;
   background-color: whitesmoke;
-  opacity: 0.9;
-  width: 100%;
-  color: black;
   border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  opacity: 0.9;
+  padding: 5%;
+  width: 100%;
 }
 
 ul {
