@@ -75,51 +75,61 @@
             <div class="darkestBG col-sm-3 col-xs-6">test3</div>
         </div>
     </div> -->
-    <h2>Panel from scratch</h2>
-    <div class="myPanel">
-        <div class="header">my header</div>
-        <div class="body">
-            <p>my body</p>
-            <div class="showOnHover">
-                <button type="button" class="btn btn-xs btn-danger">Delete</button>
+
+    <div class="examples">
+        <div class="panel">
+            <h4>Panel with CSS and jQuery</h4>
+            <div class="myPanel">
+                <div class="header">Disappearing panel</div>
+                <div class="body">
+                    <p>Click on the delete button to make the panel temporarily disappear</p>
+                    <div class="showOnHover">
+                        <button type="button" class="btn btn-xs btn-danger">Delete</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <h2>Javascript events</h2>
-    <div class="adding">
-        <h4>Add numbers:</h4>
-        <p>
-            <input id="num-one"> +
-            <input id="num-two">
-        </p>
-        <p id="add-sum"></p>
-    </div>
+        <div class="adding">
+            <h4>Add numbers:</h4>
+            <p>
+                <input id="num-one"> +
+                <input id="num-two">
+            </p>
+            <p id="add-sum"></p>
+        </div>
 
-    <div class="pics">
-        <h4>Pictures</h4>
-        <ul>
-            <button name="data" type="button" onclick="getData()">
-                <li>
-                    <a data-img="one-pic" id="one">Picture1</a>
-                </li>
+        <div class="pics">
+            <h4>OnClick Pictures</h4>
+            <ul>
+                <button name="data" type="button" onclick="getData()">
+                    <li>
+                        <a data-img="one-pic" id="one">Picture1</a>
+                    </li>
+                </button>
+
                 <img class="hide" id="one-pic" src="../img/pic1.png" height="42">
-                <li>
-                    <a data-img="two-pic" id="two">Picture2</a>
-                </li>
+                <p></p>
+
+                <button name="data" type="button" onclick="getData()">
+                    <li>
+                        <a data-img="two-pic" id="two">Picture2</a>
+                    </li>
+                </button>
+
                 <img class="hide" id="two-pic" src="../img/pic2.png" height="42">
+                <p></p>
 
-                <li>
-                    <a data-img="three-pic" id="three">Picture3</a>
-                </li>
+                <button name="data" type="button" onclick="getData()">
+                    <li>
+                        <a data-img="three-pic" id="three">Picture3</a>
+                    </li>
+                </button>
                 <img class="hide" id="three-pic" src="../img/pic3.png" height="42">
+            </ul>
+        </div>
 
-            </button>
-        </ul>
-
-        
     </div>
-
     <!--
     button that refreshes the page:
     <form method="POST">
@@ -138,6 +148,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
 
     <script src="../js/test.js"></script>
 </body>
