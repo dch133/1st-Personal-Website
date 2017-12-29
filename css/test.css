@@ -1,15 +1,22 @@
-
-h2 {
+.examples {
+    display: inline-flex;
+    flex-wrap: wrap;
     color: whitesmoke;
+    padding: 5%;
+
+
+}
+.adding, .pics{
     padding: 5%;
 }
 
-.adding, .pics{
-    color: whitesmoke;
-    padding: 0 5% 5% 5%;
+
+button {
+    background-color: rgba(194, 71, 71, 0.795);
+    border: rgb(0, 0, 0);
 }
 
-ul {
+.pics ul {
     list-style-type: none;
     font-size: 150%;
 }
@@ -19,26 +26,23 @@ ul {
 }
 
 .myPanel {
-    border: 1px solid #687D6D;
-    border-radius: 5px;
-    box-shadow: 0px 0px 4px #ccc;
-    margin: 2% 5% 0 5%;    
-    width: 50vh
+    border-radius: 5%;
+    border: 2px solid rgb(109, 109, 109);
 }
 
 .myPanel .header {
     background: #86F0C4;
     border-radius: 5px 5px 0 0;
     color: #687D6D;
-    padding: 10px 20px;
+    padding: 5% 5%;
+    text-align: center;
 }
 
 .myPanel .body {
-    padding: 10px 20px;
     background-color: white;
     border-radius: 0 0 5px 5px;
     color: black;
-
+    padding: 5% 5%;
 }
 
 .myPanel .showOnHover {
@@ -46,7 +50,7 @@ ul {
 }
 
 .myPanel:hover {
-    box-shadow: 0px 0px 8px black;
+    box-shadow: 0px 0px 15px rgb(255, 166, 0);
     border: 2px solid #687D6D;
 }
 
