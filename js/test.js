@@ -1,3 +1,15 @@
+//Make the panel disapear (and reappear) - jQuery
+function main() {
+  $('.btn').on('click', 
+  function() {
+    $('.myPanel').hide();
+    $('.myPanel').fadeIn(10000);
+
+  });
+}
+
+$(document).ready(main);
+
 //adding numbers
 var n1 = document.getElementById("num-one");
 var n2 = document.getElementById("num-two");
