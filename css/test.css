@@ -45,6 +45,9 @@
     width: 45vh;
 }
 
+.adding input{
+    width: 12vh;
+}
 
 .pics button {
     background-color: rgba(194, 71, 71, 0.795);
