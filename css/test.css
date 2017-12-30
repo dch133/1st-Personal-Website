@@ -60,6 +60,10 @@
     font-size: 150%;
 }
 
+.todo {
+    width: 45vw;
+}
+
 .todo ul {
     list-style-type: decimal;
 }
