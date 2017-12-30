@@ -1,38 +1,15 @@
-.examples {
+
+.examples{
     display: inline-flex;
     flex-wrap: wrap;
     color: whitesmoke;
     padding: 5%;
-
-
-}
-.adding, .pics{
-    padding: 5%;
-}
-
-
-button {
-    background-color: rgba(194, 71, 71, 0.795);
-    border: rgb(0, 0, 0);
-    cursor: pointer;
-}
-
-.pics ul {
-    list-style-type: none;
-    font-size: 150%;
-}
-
-.pics .hide{
-    display: none;
-}
-
-.myPanel {
-    border-radius: 5%;
-    border: 2px solid rgb(109, 109, 109);
+    justify-content: center 
 }
 
 .myPanel .header {
     background: #86F0C4;
+    border: 1px solid rgb(109, 109, 109);
     border-radius: 5px 5px 0 0;
     color: #687D6D;
     padding: 5% 5%;
@@ -41,6 +18,7 @@ button {
 
 .myPanel .body {
     background-color: white;
+    border: 1px solid rgb(109, 109, 109);
     border-radius: 0 0 5px 5px;
     color: black;
     padding: 5% 5%;
@@ -51,6 +29,7 @@ button {
 }
 
 .myPanel:hover {
+    padding: 0;
     box-shadow: 0px 0px 15px rgb(255, 166, 0);
     border: 2px solid #687D6D;
 }
@@ -59,3 +38,40 @@ button {
     display: inline-block;
 }
 
+
+.myPanel, .adding, .pics, .todo{
+    margin: 1%;
+    padding: 5%;
+    width: 45vh;
+}
+
+
+.pics button {
+    background-color: rgba(194, 71, 71, 0.795);
+    cursor: pointer;
+}
+
+.pics .hide{
+    display: none;
+}
+
+.pics ul, .todo ul {
+    list-style-type: none;
+    font-size: 150%;
+}
+
+.todo ul {
+    list-style-type: decimal;
+}
+
+li input {
+    display: none;
+}
+
+li.edit span {
+    display: none;
+}
+
+li.edit input {
+    display: initial;
+}
