@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     color: whitesmoke;
     padding: 5%;
-    justify-content: center 
+    justify-content: center;
 }
 
 .myPanel .header {
@@ -62,6 +62,8 @@
 
 .todo {
     width: 45vw;
+    box-sizing: initial;
+
 }
 
 .todo ul {
@@ -78,4 +80,6 @@ li.edit span {
 
 li.edit input {
     display: initial;
+    width: 20vh;
+
 }
