@@ -19,7 +19,7 @@ $(function () {
   });
 
   $('#btn2').on('click', function () {
-    $('#panel2').toggle(2000,
+    $('#panel2').toggle(4000,
       function () {
         $('#panel2 .body').html('Missed you!');
       }
@@ -27,7 +27,7 @@ $(function () {
   });
 
   $('#panel3').on('click', function () {
-    $('#panel3').fadeToggle(1000,
+    $('#panel3').fadeToggle(100,
       function () {
         $('#panel2 .body').html('I am not going anywhere!');
       }
