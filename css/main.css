@@ -7,7 +7,6 @@ body {
 }
 
 body .intro {
-    display: block;
     color: whitesmoke;
     text-align: center;
     font-size: 300%;
