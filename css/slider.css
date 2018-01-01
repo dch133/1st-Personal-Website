@@ -11,14 +11,14 @@ h4 {
     justify-content: center;
 }
 #slider {
-    width: 50vh;
-    height: 25vh;
+    width: auto;
+    height: auto;
     overflow: hidden;
 }
 
 #slider .slides {
     display: block;
-    width: 6000px;
+    width: 4500px;
     height: 400px;
     margin: 0;
     padding: 0;
@@ -29,6 +29,7 @@ h4 {
     list-style-type: none;
     width: 720px;
     height: 400px;
+
 }
 
 /* helper css, since we don't have images */
