@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/test2.css">
+    <link rel="stylesheet" href="../css/tabPanel.css">
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
@@ -45,10 +45,10 @@
                             aria-expanded="false">Testing Area</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="test.html">JavaScript Events </a>
-                            <a class="dropdown-item" href="#">Panels with jQuery
+                            <a class="dropdown-item" href="test2.html">Panels with jQuery </a>
+                            <a class="dropdown-item" href="#">jQuery Tab Panel Widget
                                 <span class="sr-only">(current)</span>
                             </a>
-                            <a class="dropdown-item" href="tabPanel.html">jQuery Tab Panel Widget </a>
                             <a class="dropdown-item" href="slider.html">jQuery Image Slider </a>
 
                             <div class="dropdown-divider"></div>
@@ -63,96 +63,56 @@
         </nav>
     </header>
 
-    <div class="examples2">
+    <div class="tab-panels">
+        <h4>jQuery Tab Panel Widget</h4>
+        <ul class="tabs">
+            <li rel="panel1" class="active">panel1</li>
+            <li rel="panel2">panel2</li>
+            <li rel="panel3">panel3</li>
+            <li rel="panel4">panel4</li>
+        </ul>
 
-        <h4>Panel Party</h4>
-
-        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-            <div class="btn-group mr-2" role="group" aria-label="First group">
-                <button type="button" class="btn btn-secondary" id="btn1">1</button>
-                <button type="button" class="btn btn-secondary" id="btn2">2</button>
-                <button type="button" class="btn btn-secondary" id="btn3">3</button>
-                <button type="button" class="btn btn-secondary" id="btn4">4</button>
-            </div>
+        <div id="panel1" class="panel active">
+            content1
+            <br/> content1
+            <br/> content1
+            <br/> content1
+            <br/> content1
+            <br/>
+        </div>
+        <div id="panel2" class="panel">
+            content2
+            <br/> content2
+            <br/> content2
+            <br/> content2
+            <br/> content2
+            <br/>
+        </div>
+        <div id="panel3" class="panel">
+            content3
+            <br/> content3
+            <br/> content3
+            <br/> content3
+            <br/> content3
+            <br/>
+        </div>
+        <div id="panel4" class="panel">
+            content4
+            <br/> content4
+            <br/> content4
+            <br/> content4
+            <br/> content4
+            <br/>
         </div>
 
-        <div class="myPanel" id="panel1">
-            <div class="header">Panel 1</div>
-            <div class="body">
-                <p>Click on
-                    <strong>button 1</strong> to disappear</p>
-                <div class="showOnHover">
-                </div>
-            </div>
-        </div>
+        <p>
+            <br>
+            <br>
+        This widget was built with jQuery: <br>
+        </p>
 
-        <div class="myPanel" id="panel2">
-            <div class="header">Panel 2</div>
-            <div class="body">
-                <p>Click on
-                    <strong>button 2</strong> to disappear</p>
-                <div class="showOnHover">
-                </div>
-            </div>
-        </div>
-
-        <div class="myPanel" id="panel3">
-            <div class="header">Panel 3</div>
-            <div class="body">
-                <p>Click on
-                    <strong>button 3</strong> to disappear</p>
-                <div class="showOnHover">
-                </div>
-            </div>
-        </div>
-
-        <div class="myPanel" id="panel4">
-            <div class="header">Panel 4</div>
-            <div class="body">
-                <p>Click on
-                    <strong>button 4</strong> to disappear</p>
-                <div class="showOnHover">
-                </div>
-            </div>
-        </div>
-        <div class="myPanel" id="panel5">
-            <div class="header">Panel 5</div>
-            <div class="body">
-                <p>Click on the panel to disappear</p>
-                <div class="showOnHover">
-                </div>
-            </div>
-        </div>
-        <div class="myPanel" id="panel6">
-            <div class="header">Panel 6</div>
-            <div class="body">
-                <p>Click on the panel to disappear</p>
-                <div class="showOnHover">
-                </div>
-            </div>
-        </div>
-        <div class="myPanel" id="panel7">
-            <div class="header">Panel 7</div>
-            <div class="body">
-                <p>Click on the panel to disappear</p>
-                <div class="showOnHover">
-                </div>
-            </div>
-        </div>
-        <div class="myPanel" id="panel8">
-            <div class="header">Panel 8</div>
-            <div class="body">
-                <p>Click on the panel to disappear</p>
-                <div class="showOnHover">
-                </div>
-            </div>
-        </div>
     </div>
-    <p>
-        <br>
-        <br>
-    </p>
-    </div>
+
 
 
 
@@ -166,7 +126,7 @@
         crossorigin="anonymous"></script>
     <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
 
-    <script src="../js/test2.js"></script>
+    <script src="../js/tabPanel.js"></script>
     <script src="../js/main.js"></script>
 
 </body>
