@@ -2,7 +2,8 @@
 $(function() {
 
     //settings for slider
-    var width = 400;
+
+    var width = $(".slide").width();
     var animationSpeed = 1000;
     var pause = 3000;
     var currentSlide = 1;
@@ -33,6 +34,6 @@ $(function() {
         .on('mouseleave', startSlider);
 
     startSlider();
-
+    //$("body").height(windowHeight);
 
 });
