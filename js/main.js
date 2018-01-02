@@ -1,5 +1,4 @@
 function isMobile() {
-  document.getElementsByClassName("mobile").innerHTML = "Javascript was disabled for convenience on smaller screens";
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
