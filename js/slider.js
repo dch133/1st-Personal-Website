@@ -1,5 +1,5 @@
 
-$(function() {
+$(function () {
 
     //settings for slider
 
@@ -16,8 +16,13 @@ $(function() {
     var interval;
 
     function startSlider() {
-        interval = setInterval(function() {
-            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+        interval = setInterval(function () {
+            $slideContainer.animate({ 'margin-left': '-=' + width }, animationSpeed, function () {
+
+                //reload page if screen size/orientation (mobile) changes
+                window.onresize = function (event) {
+                    document.location.reload(true);
+                }
                 if (++currentSlide === $slides.length) {
                     currentSlide = 1;
                     $slideContainer.css('margin-left', 0);
