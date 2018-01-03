@@ -12,8 +12,8 @@ h4 {
 }
 
 #slider {
-    width: 50vw;
-    height: 25vw;
+    width: 55vw;
+    height: 35vw;
     overflow: hidden;
     resize: both;
 }
@@ -29,39 +29,39 @@ h4 {
 #slider .slide {
     float: left;
     list-style-type: none;
-    width: 50vw;
-    height: 25vw;
+    width: 55vw;
+    height: 35vw;
 }
 
 /* helper css, since we don't have images */
 .slide1 {
-    background-image: url("../img/slide1.jpg");
+    background-image: url("../img/slides/slide1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 /*    background: red;*/
 }
 .slide2 {
-    background-image: url("../img/slide2.png");
+    background-image: url("../img/slides/slide2.png");
     background-repeat: no-repeat;
     background-size: cover;
     /*background: blue;*/
 }
 .slide3 {
-    background-image: url("../img/slide3.jpg");
+    background-image: url("../img/slides/slide3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
     /*background: green; */
 }
 .slide4 {
-    background-image: url("../img/slide4.jpg");
+    background-image: url("../img/slides/slide4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
     /*background: purple;*/
 }
 .slide5 {
-    background-image: url("../img/slide5.jpg");
+    background-image: url("../img/slides/slide5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
