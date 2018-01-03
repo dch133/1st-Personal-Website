@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/matrix.css">
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
@@ -47,11 +47,10 @@
                             <a class="dropdown-item" href="test.html">JavaScript Events </a>
                             <a class="dropdown-item" href="test2.html">Panels with jQuery </a>
                             <a class="dropdown-item" href="tabPanel.html">jQuery Tab Panel Widget </a>
-                            <a class="dropdown-item" href="#">jQuery Image Slider
+                            <a class="dropdown-item" href="slider.html">jQuery Image Slider </a>
+                            <a class="dropdown-item" href="#">Into the Matrix
                                 <span class="sr-only">(current)</span>
                             </a>
-                            <a class="dropdown-item" href="matrix.html">Into the Matrix </a>
-
 
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">More Coming Soon</a>
@@ -65,30 +64,32 @@
         </nav>
     </header>
 
-    <div class="container">
-        <h4>jQuery Basic Image Slider</h4>
-
-        <div class="header">
+    <div class="matrix">
+        <h4>Enter the Matrix</h4>
+        <div id="myProgress">
+            <div id="myBar"></div>
         </div>
 
-        <div id="slider">
-            <ul class="slides">
-                <li class="slide slide1"></li>
-                <li class="slide slide2"></li>
-                <li class="slide slide3"></li>
-                <li class="slide slide4"></li>
-                <li class="slide slide5"></li>
-                <li class="slide slide1"></li>
-            </ul>
+        <br>
+        <button id="start" onclick="move()">Log In</button>
+
+        <!-- make the matrix image invisible initially -->
+        <img id="matrix" src="../img/matrix/matrix.jpg">
+        <img id="file" src="../img/">
+        <!-- creates the file icon -->
+
+        <script>
+            document.getElementById("matrix").style.visibility
+                = 'hidden';
+        </script>
+        <div id="overlay">
+            <div class="welcome">
+                <p id="p1">Welcome to The Matrix.</p>
+                <p id="p2"> Watch out for Mr. Smith!</p>
+            </div>
         </div>
-        <p class="text">
-            <br>
-            <br>
-            <strong> This slider was built with jQuery.
-                <br> If you hover your mouse over the image or click on the image (for mobile devices), the slide show will stop.</strong>
-        </p>
+
     </div>
-
 
 
     <!-- Bootstrap JavaScript -->
@@ -100,7 +101,7 @@
         crossorigin="anonymous"></script>
     <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
 
-    <script src="../js/slider.js"></script>
+    <script src="../js/matrix.js"></script>
     <script src="../js/main.js"></script>
 
 </body>
