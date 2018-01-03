@@ -9,7 +9,6 @@ var blink = window.setInterval(function blinking() {
   }
 }, 500);
 
-
 var rotate;
 var img = document.getElementById("matrix");
 
@@ -53,14 +52,16 @@ function move() {
 
   rotateAnimation();
   zooming();
-  img.style.visibility = 'visible'
+  img.style.visibility = 'visible';
+  document.getElementById("myProgress").style.visibility = 'visible';
+
   function frame() {
     if (barLength == 100) { //when the bar is done "loading"
       clearInterval(bar);
       clearInterval(zoom);
       clearInterval(rotate);
       img.style.visibility = 'hidden';
-      overlay();
+      overlay(); //matrix city
       //reset the javascript
       setTimeout(function () {
         window.location = window.location.href;
