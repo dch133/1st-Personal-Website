@@ -8,6 +8,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/matrix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
@@ -66,21 +67,28 @@
 
     <div class="matrix">
         <h4>Enter the Matrix</h4>
+        <h5>Click on the button to get uploaded into the Matrix</h5>
         <div id="myProgress">
             <div id="myBar"></div>
         </div>
+        <script>
+            document.getElementById("myProgress").style.visibility
+                = 'hidden';
+        </script>
 
+        <!-- creates the file icon -->
+        <i class="fa fa-file" id="file"></i>
         <br>
-        <button id="start" onclick="move()">Log In</button>
+        <br>
+        <button id="start" onclick="move()">Start</button>
 
         <!-- make the matrix image invisible initially -->
         <img id="matrix" src="../img/matrix/matrix.jpg">
-        <img id="file" src="../img/">
-        <!-- creates the file icon -->
 
         <script>
             document.getElementById("matrix").style.visibility
                 = 'hidden';
+
         </script>
         <div id="overlay">
             <div class="welcome">
