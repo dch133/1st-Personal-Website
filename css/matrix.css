@@ -1,13 +1,13 @@
-h4, h5 {
-  justify-content: center;
+.login {
+  z-index: 2;
+  color: black;
 }
-
 .matrix {
   /*display: inline-flex;
   flex-wrap: wrap;*/
   color: whitesmoke;
   padding: 5%;
-  justify-content: center;
+  text-align: center;
   height: 80vh;
   width: 90vw;
 }
@@ -17,10 +17,9 @@ cursor: progress;
 }
 
 #file {
-  margin: 0% 50% 0% 48%;
-  color: green;
+  background-color: rgba(0, 128, 0, 0.637);
   padding: 1%;
-  border: 1px solid  #4CAF50;
+  border: ridge rgb(1, 53, 1);
 }
 
 #myProgress {
@@ -46,10 +45,10 @@ cursor: progress;
   bottom: 0;
   left: 0;
   right: 0;
-  max-width: 400vh;
-  max-height: 400vh;
+  max-width: 100vw;
+  max-height: 100vw;
   margin: auto;
-  overflow: auto;
+  overflow: hidden;
   border-radius: 100%;
   border: ridge rgb(22, 121, 19);
   box-shadow: 0px 0px 20px rgb(22, 121, 19);
