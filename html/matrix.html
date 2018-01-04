@@ -69,7 +69,9 @@
         <h4>Enter the Matrix</h4>
         <h5>Click on the button to get uploaded into the Matrix</h5>
         <div id="myProgress">
-            <div id="myBar"></div>
+            <div id="myBar">
+                <p class="login"></p>
+            </div>
         </div>
         <script>
             document.getElementById("myProgress").style.visibility
@@ -77,11 +79,11 @@
         </script>
 
         <!-- creates the file icon -->
-        <i class="fa fa-file" id="file"></i>
+        <img id="file" src="../img/matrix/file.png" alt="File Icon">
         <br>
         <br>
         <button id="start" onclick="move()">Start</button>
-
+        <br>
         <!-- make the matrix image invisible initially -->
         <img id="matrix" src="../img/matrix/matrix.jpg">
 
@@ -92,8 +94,7 @@
         </script>
         <div id="overlay">
             <div class="welcome">
-                <p id="p1">Welcome to The Matrix.</p>
-                <p id="p2"> Watch out for Mr. Smith!</p>
+                <strong> Welcome to The Matrix </string>
             </div>
         </div>
 
