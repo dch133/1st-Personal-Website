@@ -50,7 +50,7 @@ function move() {
   var width = img.clientWidth;
   var height = img.clientHeight;
 
-  $("h5").css('visibility', 'hidden');
+  $("h4,h5").css('visibility', 'hidden');
   $(".login").html("Uploading...")
   $("header").css('visibility', 'hidden');
   $("footer").css('visibility', 'hidden');
