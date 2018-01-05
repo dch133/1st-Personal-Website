@@ -7,21 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/test.css">
+    <link rel="stylesheet" href="../css/test2.css">
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <!-- Navbar
-    <header class="navbar-inverse">
-        <div id="nav-placeholder"></div>
-    </header>
-    
-    <script>
-            $("#nav-placeholder").load("./html/nav.html");
-    </script>
-    <!--end of Navigation bar-->
 
     <header class="navbar-inverse">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -42,21 +33,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="skills.html">Skills</a>
                     </li>
-                    <!--  
+
+                    <!-- 
                     <li class="nav-item active">
                         <a class="nav-link" href="test.html">Testing Area
-                            <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    -->
+                     -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">Testing Area</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="test.html">JavaScript events
-                                    <span class="sr-only">(current)</span>
+                            <a class="dropdown-item" href="test.html">JavaScript Events </a>
+                            <a class="dropdown-item" href="#">Panels with jQuery
+                                <span class="sr-only">(current)</span>
                             </a>
-                            <a class="dropdown-item" href="test2.html">Panels with jQuery</a>
                             <a class="dropdown-item" href="tabPanel.html">jQuery Tab Panel Widget </a>
                             <a class="dropdown-item" href="slider.html">jQuery Image Slider </a>
                             <a class="dropdown-item" href="matrix.html">Into the Matrix </a>
@@ -72,96 +63,98 @@
             </div>
         </nav>
     </header>
-    <!--
-    <div class="container">
-        <div class="row">
-            <div class="darkBG col-sm-6 col-xs-12">
-                <button type="button" class="btn btn-primary">Primary</button>            </div>
-            <div class="darkerBG col-sm-3 col-xs-6">test2</div>
-            <div class="darkestBG col-sm-3 col-xs-6">test3</div>
-        </div>
-    </div> -->
 
-    <div class="examples">
-        <div class="panel">
-            <h4>Panel with CSS and jQuery</h4>
-            <div class="myPanel">
-                <div class="header">Disappearing panel</div>
-                <div class="body">
-                    <p>Click on the delete button to make the panel temporarily disappear</p>
-                    <div class="showOnHover">
-                        <button type="button" class="btn btn-xs btn-danger">Delete</button>
-                    </div>
+    <div class="examples2">
+
+        <h4>Panel Party</h4>
+
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary" id="btn1">1</button>
+                <button type="button" class="btn btn-secondary" id="btn2">2</button>
+                <button type="button" class="btn btn-secondary" id="btn3">3</button>
+                <button type="button" class="btn btn-secondary" id="btn4">4</button>
+            </div>
+        </div>
+
+        <div class="myPanel" id="panel1">
+            <div class="header">Panel 1</div>
+            <div class="body">
+                <p>Click on
+                    <strong>button 1</strong> to disappear</p>
+                <div class="showOnHover">
                 </div>
             </div>
         </div>
 
-        <div class="adding">
-            <h4>Add numbers:</h4>
-            <p>
-                <input id="num-one"> +
-                <input id="num-two">
-            </p>
-            <p id="add-sum"></p>
+        <div class="myPanel" id="panel2">
+            <div class="header">Panel 2</div>
+            <div class="body">
+                <p>Click on
+                    <strong>button 2</strong> to disappear</p>
+                <div class="showOnHover">
+                </div>
+            </div>
         </div>
 
-        <div class="pics">
-            <h4>OnClick Pictures</h4>
-            <ul>
-                <button name="data" type="button" onclick="getData()">
-                    <li>
-                        <a data-img="one-pic" id="one">Picture1</a>
-                    </li>
-                </button>
-
-                <img class="hide" id="one-pic" src="../img/pic1.png" height="42">
-                <p></p>
-
-                <button name="data" type="button" onclick="getData()">
-                    <li>
-                        <a data-img="two-pic" id="two">Picture2</a>
-                    </li>
-                </button>
-
-                <img class="hide" id="two-pic" src="../img/pic2.png" height="42">
-                <p></p>
-
-                <button name="data" type="button" onclick="getData()">
-                    <li>
-                        <a data-img="three-pic" id="three">Picture3</a>
-                    </li>
-                </button>
-                <img class="hide" id="three-pic" src="../img/pic3.png" height="42">
-            </ul>
+        <div class="myPanel" id="panel3">
+            <div class="header">Panel 3</div>
+            <div class="body">
+                <p>Click on
+                    <strong>button 3</strong> to disappear</p>
+                <div class="showOnHover">
+                </div>
+            </div>
         </div>
 
-        <div class="todo">
-            <h4>Simple To-Do List</h4>
-            <ul id="checklist">
-                <li>
-                    <span>Learn HTML</span>
-                    <input value="Learn HTML" />
-                </li>
-                <li>
-                    <span>Learn CSS</span>
-                    <input value="Learn CSS" />
-                </li>
-                <li>
-                    <span>Learn JS</span>
-                    <input value="Learn JS" />
-                </li>
-            </ul>
+        <div class="myPanel" id="panel4">
+            <div class="header">Panel 4</div>
+            <div class="body">
+                <p>Click on
+                    <strong>button 4</strong> to disappear</p>
+                <div class="showOnHover">
+                </div>
+            </div>
         </div>
-
+        <div class="myPanel" id="panel5">
+            <div class="header">Panel 5</div>
+            <div class="body">
+                <p>Click on the panel to disappear</p>
+                <div class="showOnHover">
+                </div>
+            </div>
+        </div>
+        <div class="myPanel" id="panel6">
+            <div class="header">Panel 6</div>
+            <div class="body">
+                <p>Click on the panel to disappear</p>
+                <div class="showOnHover">
+                </div>
+            </div>
+        </div>
+        <div class="myPanel" id="panel7">
+            <div class="header">Panel 7</div>
+            <div class="body">
+                <p>Click on the panel to disappear</p>
+                <div class="showOnHover">
+                </div>
+            </div>
+        </div>
+        <div class="myPanel" id="panel8">
+            <div class="header">Panel 8</div>
+            <div class="body">
+                <p>Click on the panel to disappear</p>
+                <div class="showOnHover">
+                </div>
+            </div>
+        </div>
     </div>
-    <!--
-    button that refreshes the page:
-    <form method="POST">
-        <button name="data" onclick="return getData()">Click</button>
-    </form>
-    button that doesn't refresh the page:
-    <button name="data" type="button" onclick="getData()">Click</button> 
-    -->
+    <p>
+        <br>
+        <br>
+    </p>
+    </div>
+
 
 
 
@@ -174,7 +167,7 @@
         crossorigin="anonymous"></script>
     <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
 
-    <script src="../js/test.js"></script>
+    <script src="../js/test2.js"></script>
     <script src="../js/main.js"></script>
 
 </body>

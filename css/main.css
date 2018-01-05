@@ -3,13 +3,13 @@ body {
     background-image: url("../img/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 body .intro {
-    display: block;
     color: whitesmoke;
     text-align: center;
-    font-size: 300%;
+    font-size: 250%;
     padding: 15%;
 }
 

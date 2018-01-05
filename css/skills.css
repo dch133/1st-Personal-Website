@@ -1,8 +1,8 @@
 
 body {
   font-family: Helvetica;
-  background-image: url("../img/skills.jpg");
-  background-size: cover;
+  /*background-image: url("../img/skills.jpg");
+  background-size: cover;*/
 }
 
 .skillset {
@@ -24,27 +24,27 @@ h1 {
 }
 
 .skill-java {
-  background-color: rgba(38, 229, 54, 0.470);
+  background-color: rgba(38, 229, 54, 0.555);
 }
 
 .skill-c {
-  background-color: rgba(38, 229, 229, 0.470);
+  background-color: rgba(38, 229, 229, 0.555);
 }
 
 .skill-html {
-  background-color: rgba(229, 83, 38, 0.470);
+  background-color: rgba(229, 83, 38, 0.555);
 }
 
 .skill-js {
-  background-color: rgba(229, 162, 39, 0.470);
+  background-color: rgba(229, 162, 39, 0.555);
 }
 
 .skill-jquery {
-  background-color: rgba(12, 115, 184, 0.470);
+  background-color: rgba(12, 115, 184, 0.555);
 }
 
 .skill-fun {
-  background-color: rgba(220, 20, 60, 0.432);
+  background-color: rgba(220, 20, 60, 0.555);
 }
 
 .skill-fun,
@@ -57,17 +57,18 @@ h1 {
   box-shadow: 0px 0px 30px rgb(0, 0, 0);
   color: whitesmoke;
   margin: 1%;
-  padding: 5%;
+  padding: 2.5%;
   width: 35vh;
 }
 
 .projects-button {
-  padding: 5%;
   background-color: whitesmoke;
-  opacity: 0.9;
-  width: 100%;
-  color: black;
   border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  opacity: 0.9;
+  padding: 5%;
+  width: 100%;
 }
 
 ul {

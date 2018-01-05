@@ -1,0 +1,58 @@
+
+.examples2{
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: whitesmoke;
+    padding: 5%;
+    justify-content: center;
+}
+
+h4 {
+    justify-content: center;
+
+}
+.btn-toolbar {
+    display: inline-block;
+    margin: 0 40% 0 40%;
+}
+
+.myPanel{
+    padding: 1%;
+    width: 20vh;
+    clear: both;
+    cursor: pointer;
+}
+
+.myPanel .header {
+    background: rgba(220, 20, 60, 0.753);
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 5px 5px 0 0;
+    color: white;
+    padding: 5% 5%;
+    text-align: center;
+}
+
+.myPanel .body {
+    background-color: white;
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 0 0 5px 5px;
+    color: black;
+    padding: 5% 5%;
+}
+
+.myPanel .showOnHover {
+    display: none;
+}
+/*
+.myPanel:hover {
+    padding: 0;
+    box-shadow: 0px 0px 15px black;
+    border: 2px solid #687D6D;
+}
+
+.myPanel:hover .showOnHover {
+    display: inline-block;
+}
+*/
+
+

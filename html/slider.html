@@ -2,17 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Daniel Chernis</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/slider.css">
 
-
-    <!-- navbar js -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
@@ -20,8 +16,8 @@
 
     <header class="navbar-inverse">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/icon.png" alt="MENU">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/icon.png" id="ic" alt="MENU">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -30,38 +26,37 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="html/skills.html">Skills</a>
+                        <a class="nav-link" href="skills.html">Skills</a>
                     </li>
 
                     <!-- 
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/test.html">Testing Area</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="test.html">Testing Area
+                        </a>
                     </li>
                      -->
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">Testing Area</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="html/test.html">JavaScript Events</a>
-                            <a class="dropdown-item" href="html/test2.html">Panels with jQuery</a>
-                            <a class="dropdown-item" href="html/tabPanel.html">jQuery Tab Panel Widget </a>
-                            <a class="dropdown-item" href="html/slider.html">jQuery Image Slider </a>
-                            <a class="dropdown-item" href="html/matrix.html">Into the Matrix </a>
+                            <a class="dropdown-item" href="test.html">JavaScript Events </a>
+                            <a class="dropdown-item" href="test2.html">Panels with jQuery </a>
+                            <a class="dropdown-item" href="tabPanel.html">jQuery Tab Panel Widget </a>
+                            <a class="dropdown-item" href="#">jQuery Image Slider
+                                <span class="sr-only">(current)</span>
+                            </a>
+                            <a class="dropdown-item" href="matrix.html">Into the Matrix </a>
+
 
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">More Coming Soon</a>
                         </div>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">More Coming Soon</a>
                     </li>
@@ -69,25 +64,29 @@
             </div>
         </nav>
     </header>
-    <div class="intro">
-        <p>Hi!
-            <br> I'm Daniel.</p>
 
-        <div>
-            <p class="typewrite" data-period="1000" data-type='[ "I love to learn new skills.","I am always open to new opportunities.","I am working to eventually become a full stack developer." ]'>
-                <span class="wrap"></span>
-            </p>
+    <div class="container">
+        <h4>jQuery Basic Image Slider</h4>
+
+        <div class="header">
         </div>
-        <br>
 
-        <small>
-            Welcome to my Website.
+        <div id="slider">
+            <ul class="slides">
+                <li class="slide slide1"></li>
+                <li class="slide slide2"></li>
+                <li class="slide slide3"></li>
+                <li class="slide slide4"></li>
+                <li class="slide slide5"></li>
+                <li class="slide slide1"></li>
+            </ul>
+        </div>
+        <p class="text">
             <br>
             <br>
-            <small>
-                There are a lot of small projects envolving HTML, CSS, JS, jQuery, and Bootstrap throughout this website.</small>
-        </small>
-        <br>
+            <strong> This slider was built with jQuery.
+                <br> If you hover your mouse over the image or click on the image (for mobile devices), the slide show will stop.</strong>
+        </p>
     </div>
 
 
@@ -99,9 +98,13 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+
+    <script src="../js/slider.js"></script>
+    <script src="../js/main.js"></script>
 
 </body>
+
 <footer>
     <p>Contact:
         <a href="mailto:daniel.chernis.33@gmail.com">
@@ -109,7 +112,7 @@
         <a href="https://github.com/dch133">
             Github</a>
     </p>
-    <p align="left">©2017-2018 Daniel Chernis </p>
+    <p align="left">©2017-2018 Daniel Chernis</p>
 </footer>
 
 </html>
