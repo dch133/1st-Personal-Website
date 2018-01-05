@@ -45,11 +45,20 @@ function zooming() {
 
 function move() {
   var elem = document.getElementById("myBar");
+
   var barLength = 0;
   var bar = setInterval(frame, 40);
   var width = img.clientWidth;
   var height = img.clientHeight;
 
+  //stop blink & make Start btn invisible
+  var start = document.getElementById("start");
+  var file = document.getElementById("file");
+  clearInterval(blink);
+  file.style.visibility = 'hidden';
+  start.style.visibility = 'hidden';
+
+  //make navbar, footer, and bg invisible and make a temp matrix bg
   $("h4,h5").css('visibility', 'hidden');
   $(".login").html("Uploading...")
   $("header").css('visibility', 'hidden');
@@ -60,9 +69,10 @@ function move() {
     'background-repeat': 'no-repeat'
   });
 
+  //animations
+  setTimeout(rotateAnimation, 500);
+  setTimeout(zooming, 0);
 
-  rotateAnimation();
-  zooming();
   img.style.visibility = 'visible';
   document.getElementById("myProgress").style.visibility = 'visible';
 
