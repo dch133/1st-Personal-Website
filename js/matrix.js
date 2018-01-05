@@ -51,12 +51,14 @@ function move() {
   var width = img.clientWidth;
   var height = img.clientHeight;
 
-  //stop blink & make Start btn invisible
+  //stop blink & make Start/icon : invisible; animation message: visible 
   var start = document.getElementById("start");
   var file = document.getElementById("file");
+  var message = document.getElementById("notvirus");
   clearInterval(blink);
   file.style.visibility = 'hidden';
   start.style.visibility = 'hidden';
+  message.style.visibility = 'visible';
 
   //make navbar, footer, and bg invisible and make a temp matrix bg
   $("h4,h5").css('visibility', 'hidden');
