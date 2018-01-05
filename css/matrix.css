@@ -2,6 +2,11 @@
   z-index: 2;
   color: black;
 }
+
+h4 {
+  z-index: 2;
+}
+
 .matrix {
   /*display: inline-flex;
   flex-wrap: wrap;*/
@@ -38,8 +43,8 @@ cursor: progress;
 }
 
 #matrix {
-  height: 10vh;
-  width: 10vh;
+  height: 1vh;
+  width: 1vh;
   position: fixed;
   top: 0;
   bottom: 0;
