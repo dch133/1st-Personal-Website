@@ -3,6 +3,13 @@
   color: black;
 }
 
+#notvirus {
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  justify-content: center;
+}
+
 h4 {
   z-index: 2;
 }
