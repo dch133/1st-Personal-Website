@@ -7,7 +7,7 @@ if (!isMobile()) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    this.period = parseInt(period, 20) || 8000;
+    this.period = parseInt(period, 1) || 8000;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
